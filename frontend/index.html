@@ -1,26 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio Tersoo Dominic</title>
-  <meta name="description" content="Tersoo Dominic — Web Developer. Portfolio showcasing skills, projects and experience." />
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dominic | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="app">
-    <header id="site-header"></header>
-    <main id="main-content"></main>
-    <footer id="site-footer"></footer>
-  </div>
+  <!-- Root container -->
+  <main id="app"></main>
 
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js"></script>
+  <!-- Scripts -->
+  <script type="module">
+    import { mountHero } from './hero.js';
+    // Later you can import other sections like about.js, projects.js, contact.js
 
-  <script type="module" src="js/app.js"></script>
+    const app = document.getElementById('app');
+
+    // Mount Hero section
+    app.appendChild(mountHero());
+  </script>
 </body>
 </html>
