@@ -1,23 +1,28 @@
+// hero.js
 export function mountHero() {
   const el = document.createElement('section');
-  el.className = 'card hero fade-in';
-  el.id = 'home';
+  el.className = 'card fade-in';
+  el.id = 'hero';
   el.innerHTML = `
-    <div class="intro">
-      <h1 style="font-size:28px">Hi, I’m <strong>Dominic</strong></h1>
-      <p style="color:var(--muted); margin-top:8px">
-        I build modern, high-performance web experiences that solve real problems and delight users.
-      </p>
-      <div class="cta">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn secondary" href="#contact">Contact Me</a>
-      </div>
-    </div>
-    <div style="min-width:220px; text-align:right;">
-      <div style="background:var(--glass); padding:12px; border-radius:10px;">
-        <strong>Dominic • Web Developer</strong>
-        <p class="form-note" style="margin-top:8px">Available for freelance and full-time roles.</p>
-      </div>
+    <h1>Tersoo Dominic</h1>
+    <p style="color:var(--muted)">Web Developer</p>
+    <div class="photo-gallery">
+      <figure>
+        <img src="assets/images/IMG_2765.jpg" alt="Dominic 1" />
+        <figcaption>ALL THINGS ARE POSSIBLE</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/IMG_6479.jpg" alt="Dominic 2" />
+        <figcaption>BELIEVE IN GOD</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/IMG_6506.JPG" alt="Dominic 3" />
+        <figcaption>WORK HARD, DREAM BIG</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/images/IMG_7871.jpg" alt="Dominic 4" />
+        <figcaption>NEVER GIVE UP</figcaption>
+      </figure>
     </div>
   `;
   return el;
