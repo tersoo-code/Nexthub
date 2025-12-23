@@ -1,1 +1,65 @@
+:root {
+  --bg: #f9f9f9;
+  --card: #fff;
+  --muted: #555;
+  --glass: rgba(255,255,255,0.8);
+}
 
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.btn {
+  background: #0078d7;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn.secondary {
+  background: #eee;
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.progress {
+  flex: 1;
+  background: #ddd;
+  border-radius: 4px;
+  height: 8px;
+}
+
+.progress i {
+  display: block;
+  height: 100%;
+  background: #0078d7;
+  border-radius: 4px;
+}
