@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dominic | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Tersoo Dominic | Portfolio</title>
+  <!-- Correct CSS path -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <!-- Root container -->
@@ -12,12 +13,10 @@
 
   <!-- Scripts -->
   <script type="module">
-    import { mountHero } from './hero.js';
-    // Later you can import other sections like about.js, projects.js, contact.js
+    <!-- Correct JS import path -->
+    import { mountHero } from './js/components/hero.js';
 
     const app = document.getElementById('app');
-
-    // Mount Hero section
     app.appendChild(mountHero());
   </script>
 </body>
