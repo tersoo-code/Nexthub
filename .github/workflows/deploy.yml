@@ -23,7 +23,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./frontend  # root folder since you have index.html, styles.css, etc.
+          path: ./frontend   # ✅ serve from frontend folder
 
       - name: Deploy to GitHub Pages
         id: deployment
