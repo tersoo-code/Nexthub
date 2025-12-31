@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dominic | Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- ✅ Absolute path for CSS -->
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
   <main id="app"></main>
 
+  <!-- ✅ Absolute path for JS -->
   <script type="module">
-    import { mountHero } from './js/components/hero.js';
+    import { mountHero } from '/js/components/hero.js';
     const app = document.getElementById('app');
     app.appendChild(mountHero());
   </script>
